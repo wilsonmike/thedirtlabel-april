@@ -6,7 +6,7 @@ const pool = require("./connection");
 
 //TVSO Data
 dirt.get('/shipping', function(req,res) {
-    let query = `select * from shipping`;
+    let query = `select * from tdlshipping`;
     pool.query(query).then((response) => {
         res.json(response.rows);
     });
